@@ -8,13 +8,12 @@
     overflow: hidden;
 }
 .aside_menu{
-    /*background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
-    background-blend-mode: multiply;*/
     width: 10%;
     max-width: 85px;
     height: 100vh;
     box-shadow: 2px 0 3px 0 rgb(0 0 0 / 10%);;
-    background-color: #ffff;
+    background-color: #353b48;
+    z-index: 1;
 }
 .d_flex{
     display: flex;
@@ -24,6 +23,7 @@
 }
 .cont_logo{
     height: 80px;
+    padding: .8em;
 }
 .cont_menu{
     height: calc(100vh - 80px);
@@ -36,10 +36,9 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    /*color: rgba(255,255,255,0.80);*/
-    color: #1C1C1C;
-    height: 100px;
+    text-align: center;    
+    color: rgba(255,255,255,.8);
+    height: 85px;
     padding: 15px 0;
     cursor: pointer;
     transition: all ease .4s;
@@ -65,12 +64,11 @@
     width: 100%;
     height: 100vh;
 }
-.header_content{
-    /*height: 5em;*/
+.header_content{    
     height: 80px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 0px -1px 5px rgba(0,0,0,0.3);
     justify-content: end;
-    padding: 3em;
+    padding: 2em 3em;
 }
 .cont_info_user{
     align-items: center;
@@ -79,8 +77,16 @@
 .cont_info_user p{
     text-align: end;
     font-size: 1em;
-    color: rgb(66 179 245);;
+    color: #353b48;
+    font-weight: bold;
+}
+.cont_info_user p span{
+    color: rgb(66 179 245) !important;
 }
 .cont_info_user img{
     height: 45px;
+}
+.body_content{
+    height: calc(100vh - 80px);
+    padding: 2em;
 }
